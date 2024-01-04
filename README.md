@@ -46,7 +46,7 @@ pnpm lint
 ```
 
 ## Ava Test Runner with TypeScript
-For information on configuring Ava Test Runner with TypeScript, refer to the official documentation.
+For information on configuring Ava Test Runner with TypeScript, refer to [the official documentation](https://github.com/avajs/ava/blob/main/docs/recipes/typescript.md).
 
 To run Ava tests in Node 20, use the following command:
 
