@@ -1,27 +1,42 @@
 {
-  "name": "simple-typescript-boilerplate",
+  "name": "@thaitype/minimal-typescript-esm-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "minimal-typescript-esm-starter",
+  "type": "module",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "default": "./dist/main.cjs"
+    }
+  },
   "scripts": {
-    "start": "tsx index.ts",
-    "test": "ava",
-    "test:watch": "ava --watch"
+    "start": "tsx src/main.ts",
+    "dev": "tsx watch src/main.ts",
+    "test": "cross-env NODE_OPTIONS='--loader=tsx --no-warnings=ExperimentalWarning' ava",
+    "test:watch": "cross-env NODE_OPTIONS='--loader=tsx --no-warnings=ExperimentalWarning' ava --watch",
+    "build": "tsup src/main.ts --dts --format esm,cjs",
+    "lint": "tsc --noEmit"
   },
   "keywords": [],
   "author": "Thada Wangthammang",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^5.2.0",
-    "tsx": "^3.12.3",
-    "esbuild-register": "^3.4.2"
+    "ava": "^6.0.1",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   },
   "ava": {
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "esbuild-register"
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=tsx"
     ]
   }
 }
