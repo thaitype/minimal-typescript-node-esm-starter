@@ -1,7 +1,7 @@
 {
-  "name": "@thaitype/minimal-typescript-esm-starter",
+  "name": "@thaitype/minimal-typescript-node-esm-starter",
   "version": "1.0.0",
-  "description": "minimal-typescript-esm-starter",
+  "description": "minimal-typescript-node-esm-starter",
   "type": "module",
   "main": "./dist/main.cjs",
   "module": "./dist/main.js",

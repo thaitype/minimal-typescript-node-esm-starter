@@ -1,4 +1,4 @@
-# minimal-typescript-esm-starter
+# minimal-typescript-node-esm-starter
 
 Welcome to the minimal TypeScript ESM (ECMAScript Modules) starter repository! This project provides a streamlined setup for building TypeScript projects with ECMAScript modules support.
 
@@ -6,7 +6,7 @@ Welcome to the minimal TypeScript ESM (ECMAScript Modules) starter repository! T
 Clone this repository to kickstart your project:
 
 ```bash
-git clone https://github.com/thaitype/minimal-typescript-esm-starter.git [project_name]
+git clone https://github.com/thaitype/minimal-typescript-node-esm-starter.git [project_name]
 ```
 
 ## Installation
