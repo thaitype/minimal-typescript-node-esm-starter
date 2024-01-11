@@ -8,6 +8,8 @@ Welcome to the minimal TypeScript ESM (ECMAScript Modules) starter repository! T
 - Zero-config test runner with [vitest](https://vitest.dev)
 - [Test Coverage by v8](https://vitest.dev/guide/coverage.html)
 - Bundling based on [tsup](https://github.com/egoist/tsup) which based on [esbuild](https://esbuild.github.io/)
+- Lint `eslint` & Type-check
+- Format with `Prettier`
 
 ## Getting Started
 Clone this repository to kickstart your project:
@@ -48,8 +50,14 @@ pnpm test:coverage
 # Build the project
 pnpm build
 
-# Type check with TypeScript
+# Type check with TypeScript & eslint
 pnpm lint
+
+# Auto fix lint
+pnpm lint:fix
+
+# Format with Prettier
+pnpm format
 ```
 
 ## Other runner option 
